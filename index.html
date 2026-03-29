@@ -1,0 +1,1460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>PA Care at Home | Find the Right Home Care for Your Loved One in Pennsylvania</title>
+<meta name="description" content="Free matching service connecting Pennsylvania patients and families with trusted, licensed home health agencies. Skilled nursing, personal care, therapy, and specialized care across PA.">
+<meta property="og:title" content="PA Care at Home | Find the Right Home Care in Pennsylvania">
+<meta property="og:description" content="We match patients and families with trusted home health agencies across Pennsylvania. Free, no obligation, personalized recommendations.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://pacareathome.org">
+<meta property="og:image" content="https://pacareathome.org/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://pacareathome.org">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath d='M50 88 C25 65 5 50 5 30 A25 25 0 0 1 50 20 A25 25 0 0 1 95 30 C95 50 75 65 50 88Z' fill='%230d9488'/%3E%3C/svg%3E">
+<meta name="theme-color" content="#0f4c5c">
+
+<!-- Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "PA Care at Home",
+  "description": "Free matching service connecting Pennsylvania patients and families with trusted, licensed home health agencies.",
+  "url": "https://pacareathome.org",
+  "email": "info@pacareathome.org",
+  "areaServed": {
+    "@type": "State",
+    "name": "Pennsylvania"
+  },
+  "serviceType": ["Home Health Care Matching", "Personal Care Referral", "Skilled Nursing Referral"]
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Merriweather:wght@700;900&display=swap" rel="stylesheet">
+
+<style>
+/* ========== RESET & TOKENS ========== */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --navy:        #0f2b3c;
+  --navy-deep:   #0a1f2e;
+  --teal:        #0f4c5c;
+  --teal-mid:    #0d7377;
+  --teal-bright: #14b8a6;
+  --teal-light:  #ccfbf1;
+  --teal-pale:   #f0fdfa;
+  --sky:         #e0f2fe;
+  --warm:        #fef7ed;
+  --warm-dark:   #fde8cd;
+  --amber:       #f59e0b;
+  --slate:       #475569;
+  --slate-light: #94a3b8;
+  --slate-100:   #f1f5f9;
+  --white:       #ffffff;
+  --off-white:   #fafbfc;
+  --green:       #16a34a;
+  --green-light: #dcfce7;
+  --red:         #ef4444;
+  --shadow-sm:   0 1px 3px rgba(0,0,0,0.06);
+  --shadow-md:   0 4px 16px rgba(0,0,0,0.08);
+  --shadow-lg:   0 12px 40px rgba(0,0,0,0.12);
+  --shadow-xl:   0 20px 60px rgba(0,0,0,0.15);
+  --radius:      16px;
+  --radius-sm:   10px;
+  --radius-xs:   6px;
+  --max-w:       1140px;
+  --max-w-narrow:860px;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  color: var(--navy);
+  line-height: 1.7;
+  background: var(--white);
+  -webkit-font-smoothing: antialiased;
+  font-size: 16px;
+}
+
+img { max-width: 100%; height: auto; display: block; }
+a { color: var(--teal-mid); text-decoration: none; transition: color 0.2s; }
+a:hover { color: var(--teal); }
+
+.container { max-width: var(--max-w); margin: 0 auto; padding: 0 24px; }
+.container-narrow { max-width: var(--max-w-narrow); margin: 0 auto; padding: 0 24px; }
+
+h1, h2, h3, h4, h5 { line-height: 1.2; }
+
+/* ========== HEADER ========== */
+.header {
+  background: rgba(255,255,255,0.97);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+  padding: 14px 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.header .container { display: flex; justify-content: space-between; align-items: center; }
+.logo {
+  font-family: 'Merriweather', serif;
+  font-size: 1.3rem;
+  font-weight: 900;
+  color: var(--navy);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.logo-icon {
+  width: 36px;
+  height: 36px;
+  background: var(--teal);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo span { color: var(--teal-mid); }
+.nav { display: flex; align-items: center; gap: 28px; }
+.nav a { color: var(--slate); font-weight: 500; font-size: 0.92rem; }
+.nav a:hover { color: var(--teal); }
+.btn-nav {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--teal);
+  color: var(--white) !important;
+  padding: 10px 24px;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all 0.2s;
+  border: none;
+  cursor: pointer;
+}
+.btn-nav:hover { background: var(--navy); transform: translateY(-1px); box-shadow: 0 4px 14px rgba(15,43,60,0.3); }
+.menu-toggle { display: none; background: none; border: none; cursor: pointer; padding: 4px; }
+
+/* ========== HERO ========== */
+.hero {
+  position: relative;
+  padding: 80px 0 100px;
+  overflow: hidden;
+  background: linear-gradient(135deg, var(--navy) 0%, var(--teal) 60%, var(--teal-mid) 100%);
+}
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse at 20% 80%, rgba(20,184,166,0.15) 0%, transparent 60%),
+    radial-gradient(ellipse at 80% 20%, rgba(14,165,233,0.1) 0%, transparent 50%);
+}
+.hero .container {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 1fr 440px;
+  gap: 60px;
+  align-items: start;
+}
+.hero-content { padding-top: 20px; }
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 50px;
+  padding: 8px 18px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--teal-light);
+  margin-bottom: 24px;
+}
+.hero h1 {
+  font-family: 'Merriweather', serif;
+  font-size: 2.9rem;
+  font-weight: 900;
+  color: var(--white);
+  line-height: 1.15;
+  margin-bottom: 16px;
+  letter-spacing: -0.02em;
+}
+.hero h1 em {
+  font-style: normal;
+  color: var(--teal-bright);
+}
+.hero-sub {
+  font-size: 1.15rem;
+  color: rgba(255,255,255,0.8);
+  margin-bottom: 28px;
+  max-width: 520px;
+  line-height: 1.7;
+}
+.hero-trust {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  margin-bottom: 36px;
+}
+.hero-trust-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.9rem;
+  color: rgba(255,255,255,0.85);
+  font-weight: 500;
+}
+.hero-trust-item svg { flex-shrink: 0; }
+.hero-btns { display: flex; gap: 14px; flex-wrap: wrap; }
+.btn-hero {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 16px 36px;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.btn-hero-primary { background: var(--teal-bright); color: var(--navy); }
+.btn-hero-primary:hover { background: #5eead4; transform: translateY(-2px); box-shadow: 0 8px 24px rgba(20,184,166,0.35); color: var(--navy); }
+.btn-hero-secondary { background: rgba(255,255,255,0.1); color: var(--white); border: 2px solid rgba(255,255,255,0.25); }
+.btn-hero-secondary:hover { background: rgba(255,255,255,0.15); border-color: rgba(255,255,255,0.4); color: var(--white); }
+
+/* ========== HERO FORM ========== */
+.hero-form {
+  background: var(--white);
+  border-radius: var(--radius);
+  padding: 32px 28px;
+  box-shadow: var(--shadow-xl);
+}
+.hero-form h2 {
+  font-family: 'Merriweather', serif;
+  font-size: 1.3rem;
+  color: var(--navy);
+  margin-bottom: 4px;
+}
+.form-sub { font-size: 0.88rem; color: var(--slate-light); margin-bottom: 20px; }
+.lead-form { display: flex; flex-direction: column; gap: 16px; }
+.fg { display: flex; flex-direction: column; gap: 5px; }
+.fg label { font-size: 0.82rem; font-weight: 600; color: var(--navy); }
+.fg input, .fg select, .fg textarea {
+  padding: 12px 14px;
+  border: 1.5px solid #e2e8f0;
+  border-radius: var(--radius-xs);
+  font-size: 0.95rem;
+  font-family: inherit;
+  color: var(--navy);
+  background: var(--off-white);
+  transition: border-color 0.2s, box-shadow 0.2s;
+  appearance: none;
+}
+.fg select {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23475569' stroke-width='2' fill='none'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 14px center;
+  padding-right: 40px;
+}
+.fg input::placeholder, .fg textarea::placeholder { color: #94a3b8; }
+.fg input:focus, .fg select:focus, .fg textarea:focus { outline: none; border-color: var(--teal-mid); box-shadow: 0 0 0 3px rgba(13,115,119,0.12); background: var(--white); }
+.fg input.invalid, .fg select.invalid { border-color: var(--red); box-shadow: 0 0 0 3px rgba(239,68,68,0.1); }
+.field-error { font-size: 0.76rem; color: var(--red); display: none; }
+.field-error.visible { display: block; }
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.checkbox-group { display: flex; flex-wrap: wrap; gap: 10px; }
+.checkbox-group label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.85rem;
+  font-weight: 400;
+  color: var(--slate);
+  cursor: pointer;
+  padding: 8px 14px;
+  border: 1.5px solid #e2e8f0;
+  border-radius: var(--radius-xs);
+  transition: all 0.2s;
+  background: var(--off-white);
+}
+.checkbox-group label:hover { border-color: var(--teal-mid); background: var(--teal-pale); }
+.checkbox-group input:checked + span { color: var(--teal); font-weight: 600; }
+.checkbox-group label:has(input:checked) { border-color: var(--teal-mid); background: var(--teal-pale); }
+.checkbox-group input { width: 16px; height: 16px; accent-color: var(--teal-mid); cursor: pointer; }
+.radio-group { display: flex; flex-wrap: wrap; gap: 8px; }
+.radio-group label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.85rem;
+  font-weight: 400;
+  color: var(--slate);
+  cursor: pointer;
+  padding: 8px 14px;
+  border: 1.5px solid #e2e8f0;
+  border-radius: var(--radius-xs);
+  transition: all 0.2s;
+  background: var(--off-white);
+}
+.radio-group label:hover { border-color: var(--teal-mid); background: var(--teal-pale); }
+.radio-group label:has(input:checked) { border-color: var(--teal-mid); background: var(--teal-pale); }
+.radio-group input { width: 16px; height: 16px; accent-color: var(--teal-mid); cursor: pointer; }
+.form-submit {
+  background: var(--teal);
+  color: var(--white);
+  padding: 15px;
+  border: none;
+  border-radius: var(--radius-xs);
+  font-size: 1.02rem;
+  font-weight: 700;
+  font-family: inherit;
+  cursor: pointer;
+  transition: all 0.2s;
+  margin-top: 4px;
+}
+.form-submit:hover { background: var(--navy); box-shadow: 0 6px 20px rgba(15,43,60,0.3); transform: translateY(-1px); }
+.form-submit:disabled { opacity: 0.6; cursor: not-allowed; transform: none; }
+.form-privacy { font-size: 0.73rem; color: var(--slate-light); line-height: 1.5; margin-top: 6px; text-align: center; }
+.form-success { display: none; text-align: center; padding: 40px 16px; }
+.form-success.visible { display: block; }
+.form-success .success-icon {
+  width: 64px; height: 64px; border-radius: 50%;
+  background: var(--green-light); display: flex; align-items: center;
+  justify-content: center; margin: 0 auto 16px;
+}
+.form-success h3 { font-size: 1.3rem; color: var(--teal); margin-bottom: 10px; }
+.form-success p { color: var(--slate); font-size: 0.95rem; }
+.form-section-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--teal-mid);
+  margin-bottom: -4px;
+  margin-top: 4px;
+}
+.form-divider {
+  height: 1px;
+  background: #e2e8f0;
+  margin: 4px 0;
+}
+
+/* ========== HOW IT WORKS ========== */
+.how-it-works { padding: 80px 0; background: var(--off-white); border-top: 1px solid var(--slate-100); border-bottom: 1px solid var(--slate-100); }
+.section-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--teal-mid);
+  margin-bottom: 12px;
+}
+.section-label::before { content: ''; width: 28px; height: 2px; background: var(--teal-mid); border-radius: 2px; }
+.section-title {
+  font-family: 'Merriweather', serif;
+  font-size: 2.2rem;
+  color: var(--navy);
+  margin-bottom: 14px;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+.section-desc { font-size: 1.05rem; color: var(--slate); max-width: 600px; line-height: 1.7; }
+.section-head { text-align: center; margin-bottom: 56px; }
+.section-head .section-desc { margin: 0 auto; }
+
+.steps-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; position: relative; }
+.step-card { text-align: center; padding: 36px 28px; background: var(--white); border-radius: var(--radius); border: 1px solid var(--slate-100); transition: all 0.3s; }
+.step-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); border-color: transparent; }
+.step-num {
+  width: 56px; height: 56px; border-radius: 50%;
+  background: var(--teal-pale); border: 2px solid var(--teal-mid);
+  display: flex; align-items: center; justify-content: center;
+  margin: 0 auto 20px;
+  font-size: 1.2rem; font-weight: 800; color: var(--teal);
+  transition: all 0.3s;
+}
+.step-card:hover .step-num { background: var(--teal); color: var(--white); }
+.step-card h3 { font-size: 1.1rem; color: var(--navy); margin-bottom: 10px; font-weight: 700; }
+.step-card p { font-size: 0.92rem; color: var(--slate); line-height: 1.65; }
+
+/* ========== CARE TYPES ========== */
+.care-types { padding: 90px 0; background: var(--white); }
+.care-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; margin-top: 48px; }
+.care-card {
+  border-radius: var(--radius);
+  border: 1px solid var(--slate-100);
+  overflow: hidden;
+  transition: all 0.3s;
+  background: var(--white);
+}
+.care-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-lg); border-color: transparent; }
+.care-card-header {
+  padding: 28px 24px 20px;
+  position: relative;
+}
+.care-card-icon {
+  width: 52px; height: 52px; border-radius: 14px;
+  display: flex; align-items: center; justify-content: center;
+  margin-bottom: 16px;
+  transition: all 0.3s;
+}
+.care-card:hover .care-card-icon { transform: scale(1.05); }
+.care-card h3 { font-size: 1.15rem; font-weight: 700; color: var(--navy); margin-bottom: 10px; }
+.care-card-body { padding: 0 24px 24px; }
+.care-card ul { list-style: none; margin-bottom: 16px; }
+.care-card li {
+  font-size: 0.88rem;
+  color: var(--slate);
+  padding: 5px 0;
+  padding-left: 22px;
+  position: relative;
+  line-height: 1.55;
+}
+.care-card li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 12px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--teal-bright);
+}
+.care-card .cost-badge {
+  display: inline-block;
+  padding: 6px 14px;
+  background: var(--teal-pale);
+  border-radius: 50px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--teal);
+}
+
+/* ========== COST GUIDE ========== */
+.cost-guide { padding: 90px 0; background: var(--off-white); border-top: 1px solid var(--slate-100); }
+.cost-table-wrap {
+  overflow-x: auto;
+  margin-top: 36px;
+  border-radius: var(--radius);
+  border: 1px solid var(--slate-100);
+  background: var(--white);
+  box-shadow: var(--shadow-sm);
+}
+.cost-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.92rem;
+}
+.cost-table thead { background: var(--teal); color: var(--white); }
+.cost-table th {
+  text-align: left;
+  padding: 16px 20px;
+  font-weight: 600;
+  font-size: 0.85rem;
+  letter-spacing: 0.03em;
+}
+.cost-table td {
+  padding: 16px 20px;
+  border-bottom: 1px solid var(--slate-100);
+  color: var(--slate);
+}
+.cost-table tbody tr:last-child td { border-bottom: none; }
+.cost-table tbody tr:hover { background: var(--teal-pale); }
+.cost-table td:first-child { font-weight: 600; color: var(--navy); }
+.cost-note {
+  margin-top: 20px;
+  padding: 16px 20px;
+  background: var(--warm);
+  border-radius: var(--radius-sm);
+  font-size: 0.88rem;
+  color: #92400e;
+  line-height: 1.6;
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+.cost-note svg { flex-shrink: 0; margin-top: 2px; }
+
+/* ========== TIPS ========== */
+.tips { padding: 90px 0; background: var(--white); }
+.tips-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-top: 48px; }
+.tips-col { }
+.tips-col h3 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.tips-col h3 .tip-icon {
+  width: 36px; height: 36px; border-radius: 10px;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.tips-col ol {
+  list-style: none;
+  counter-reset: tip;
+}
+.tips-col li {
+  counter-increment: tip;
+  padding: 14px 16px;
+  padding-left: 48px;
+  position: relative;
+  font-size: 0.92rem;
+  color: var(--slate);
+  line-height: 1.65;
+  border-radius: var(--radius-xs);
+  margin-bottom: 6px;
+  transition: background 0.2s;
+}
+.tips-col li:hover { background: var(--teal-pale); }
+.tips-col li::before {
+  content: counter(tip);
+  position: absolute;
+  left: 12px;
+  top: 14px;
+  width: 26px; height: 26px;
+  border-radius: 50%;
+  background: var(--teal-pale);
+  color: var(--teal);
+  font-size: 0.78rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tips-col li strong { color: var(--navy); font-weight: 600; }
+
+/* ========== CHECKLIST ========== */
+.checklist { padding: 90px 0; background: var(--off-white); border-top: 1px solid var(--slate-100); }
+.checklist-card {
+  max-width: 720px;
+  margin: 36px auto 0;
+  background: var(--white);
+  border-radius: var(--radius);
+  border: 1px solid var(--slate-100);
+  padding: 36px 32px;
+  box-shadow: var(--shadow-sm);
+}
+.checklist-card ul { list-style: none; }
+.checklist-card li {
+  padding: 12px 0;
+  padding-left: 36px;
+  position: relative;
+  font-size: 0.95rem;
+  color: var(--slate);
+  line-height: 1.6;
+  border-bottom: 1px solid var(--slate-100);
+}
+.checklist-card li:last-child { border-bottom: none; }
+.checklist-card li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 16px;
+  width: 20px; height: 20px;
+  border: 2px solid var(--teal-mid);
+  border-radius: 4px;
+}
+.checklist-card li::after {
+  content: '';
+  position: absolute;
+  left: 5px;
+  top: 20px;
+  width: 10px; height: 6px;
+  border-left: 2px solid var(--teal-mid);
+  border-bottom: 2px solid var(--teal-mid);
+  transform: rotate(-45deg);
+}
+
+/* ========== LEAD FORM (FULL) ========== */
+.lead-section { padding: 90px 0; background: var(--white); }
+.lead-section-inner {
+  max-width: 680px;
+  margin: 0 auto;
+  background: var(--white);
+  border-radius: var(--radius);
+  border: 2px solid var(--teal-mid);
+  padding: 40px 36px;
+  box-shadow: var(--shadow-lg);
+}
+.lead-section-inner h2 {
+  font-family: 'Merriweather', serif;
+  font-size: 1.6rem;
+  color: var(--navy);
+  margin-bottom: 6px;
+  text-align: center;
+}
+.lead-section-inner .form-sub {
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+/* ========== RESOURCES ========== */
+.resources { padding: 90px 0; background: var(--off-white); border-top: 1px solid var(--slate-100); }
+.resources-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  max-width: 720px;
+  margin: 36px auto 0;
+}
+.resource-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 20px;
+  background: var(--white);
+  border: 1px solid var(--slate-100);
+  border-radius: var(--radius-sm);
+  transition: all 0.2s;
+  text-decoration: none;
+  color: var(--navy);
+}
+.resource-card:hover { border-color: var(--teal-mid); box-shadow: var(--shadow-md); transform: translateY(-2px); color: var(--navy); }
+.resource-icon {
+  width: 44px; height: 44px; border-radius: 12px;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.resource-card h4 { font-size: 0.95rem; font-weight: 700; margin-bottom: 2px; }
+.resource-card p { font-size: 0.82rem; color: var(--slate); }
+
+/* ========== BOTTOM CTA ========== */
+.cta-section {
+  padding: 80px 0;
+  background: linear-gradient(135deg, var(--navy) 0%, var(--teal) 100%);
+  text-align: center;
+}
+.cta-section h2 {
+  font-family: 'Merriweather', serif;
+  font-size: 2.2rem;
+  color: var(--white);
+  margin-bottom: 16px;
+  line-height: 1.2;
+}
+.cta-section p { font-size: 1.05rem; color: rgba(255,255,255,0.8); margin-bottom: 32px; max-width: 560px; margin-left: auto; margin-right: auto; line-height: 1.7; }
+.btn-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--teal-bright);
+  color: var(--navy);
+  padding: 18px 42px;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 1.05rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.btn-cta:hover { background: #5eead4; transform: translateY(-2px); box-shadow: 0 8px 24px rgba(20,184,166,0.35); color: var(--navy); }
+.cta-sub { margin-top: 16px; font-size: 0.85rem; color: rgba(255,255,255,0.55); }
+
+/* ========== FOOTER ========== */
+.footer { background: var(--navy-deep); color: rgba(255,255,255,0.5); padding: 48px 0 32px; font-size: 0.85rem; }
+.footer-top { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 40px; padding-bottom: 32px; border-bottom: 1px solid rgba(255,255,255,0.06); margin-bottom: 24px; }
+.footer-brand-name { color: var(--white); font-weight: 700; font-size: 1rem; margin-bottom: 10px; }
+.footer-about { color: rgba(255,255,255,0.45); line-height: 1.7; font-size: 0.85rem; max-width: 340px; }
+.footer-col h4 { color: rgba(255,255,255,0.7); font-size: 0.82rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 14px; }
+.footer-col a { display: block; color: rgba(255,255,255,0.45); margin-bottom: 8px; font-size: 0.85rem; transition: color 0.2s; }
+.footer-col a:hover { color: var(--white); }
+.footer-bottom { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; font-size: 0.8rem; color: rgba(255,255,255,0.3); }
+.footer-disclosure {
+  margin-top: 20px;
+  padding-top: 16px;
+  border-top: 1px solid rgba(255,255,255,0.06);
+  font-size: 0.78rem;
+  color: rgba(255,255,255,0.25);
+  text-align: center;
+  line-height: 1.6;
+}
+
+/* ========== MOBILE STICKY CTA ========== */
+.mobile-cta {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: var(--navy);
+  padding: 12px 20px;
+  z-index: 200;
+  box-shadow: 0 -4px 20px rgba(0,0,0,0.15);
+}
+.mobile-cta a {
+  display: block;
+  background: var(--teal-bright);
+  color: var(--navy);
+  text-align: center;
+  padding: 14px;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 960px) {
+  .hero .container { grid-template-columns: 1fr; gap: 40px; }
+  .hero h1 { font-size: 2.3rem; }
+  .hero-form { max-width: 520px; }
+  .care-grid { grid-template-columns: 1fr 1fr; }
+  .tips-grid { grid-template-columns: 1fr; }
+  .steps-grid { grid-template-columns: 1fr; max-width: 420px; margin: 0 auto; gap: 20px; }
+  .resources-grid { grid-template-columns: 1fr; }
+  .footer-top { grid-template-columns: 1fr; gap: 28px; }
+  .nav a:not(.btn-nav) { display: none; }
+  .menu-toggle { display: block; }
+}
+
+@media (max-width: 600px) {
+  .hero { padding: 48px 0 60px; }
+  .hero h1 { font-size: 1.9rem; }
+  .hero-trust { gap: 16px; }
+  .hero-form { padding: 24px 20px; }
+  .form-row { grid-template-columns: 1fr; }
+  .care-grid { grid-template-columns: 1fr; }
+  .section-title { font-size: 1.8rem; }
+  .cta-section h2 { font-size: 1.8rem; }
+  .hero-btns { flex-direction: column; }
+  .btn-hero { width: 100%; justify-content: center; }
+  .footer-bottom { flex-direction: column; text-align: center; }
+  .mobile-cta { display: block; }
+  body { padding-bottom: 68px; }
+  .lead-section-inner { padding: 28px 20px; }
+  .checklist-card { padding: 24px 20px; }
+  .cost-table { font-size: 0.82rem; }
+  .cost-table th, .cost-table td { padding: 12px 14px; }
+  .checkbox-group label { padding: 6px 10px; font-size: 0.82rem; }
+}
+
+@media (max-width: 380px) {
+  .hero h1 { font-size: 1.6rem; }
+  .container { padding: 0 16px; }
+}
+
+/* ========== SKIP LINK ========== */
+.skip-link {
+  position: absolute;
+  top: -50px;
+  left: 0;
+  background: var(--teal);
+  color: var(--white);
+  padding: 8px 16px;
+  z-index: 1000;
+  font-size: 0.85rem;
+  transition: top 0.2s;
+}
+.skip-link:focus { top: 0; }
+</style>
+</head>
+
+<body>
+
+<a class="skip-link" href="#main-content">Skip to main content</a>
+
+<!-- HEADER -->
+<header class="header">
+  <div class="container">
+    <div class="logo" aria-label="PA Care at Home">
+      <div class="logo-icon">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+      </div>
+      PA Care <span>at Home</span>
+    </div>
+    <nav class="nav" aria-label="Main navigation">
+      <a href="#how-it-works">How It Works</a>
+      <a href="#care-types">Services</a>
+      <a href="#cost-guide">Cost Guide</a>
+      <a href="#tips">Tips</a>
+      <a href="#lead-form" class="btn-nav">Get Matched Now</a>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="main-content">
+  <div class="container">
+    <div class="hero-content">
+      <div class="hero-badge">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
+        Free Matching Service &mdash; No Obligation
+      </div>
+      <h1>Find the Right Home Care for <em>Your Loved One</em></h1>
+      <p class="hero-sub">We match patients and families with trusted home health agencies across Pennsylvania. Tell us what you need, and we'll connect you with vetted, licensed providers in your area.</p>
+
+      <div class="hero-trust">
+        <div class="hero-trust-item">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#14b8a6" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          Free
+        </div>
+        <div class="hero-trust-item">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#14b8a6" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          No Obligation
+        </div>
+        <div class="hero-trust-item">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#14b8a6" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          Personalized Recommendations
+        </div>
+      </div>
+
+      <div class="hero-btns">
+        <a href="#lead-form" class="btn-hero btn-hero-primary">
+          Get Matched Now
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#how-it-works" class="btn-hero btn-hero-secondary">
+          See How It Works
+        </a>
+      </div>
+    </div>
+
+    <!-- HERO QUICK FORM -->
+    <div class="hero-form" id="hero-quick-form">
+      <h2>Get Your Free Matches</h2>
+      <p class="form-sub">Takes 2 minutes. No commitment required.</p>
+
+      <form class="lead-form" id="heroLeadForm" novalidate>
+        <div class="fg">
+          <label for="hf-who">Who needs care?</label>
+          <select id="hf-who" name="whoNeedsCare" required>
+            <option value="" disabled selected>Select...</option>
+            <option value="myself">Myself</option>
+            <option value="parent">My parent</option>
+            <option value="spouse">My spouse</option>
+            <option value="other">Other family member</option>
+          </select>
+        </div>
+        <div class="fg">
+          <label for="hf-care">Type of care needed</label>
+          <select id="hf-care" name="careType" required>
+            <option value="" disabled selected>Select care type...</option>
+            <option value="skilled-nursing">Skilled Nursing</option>
+            <option value="personal-care">Personal Care</option>
+            <option value="therapy">Physical / Occupational Therapy</option>
+            <option value="companionship">Companionship</option>
+            <option value="dementia">Alzheimer's / Dementia Care</option>
+            <option value="post-surgery">Post-Surgical Recovery</option>
+            <option value="not-sure">Not Sure Yet</option>
+          </select>
+        </div>
+        <div class="fg">
+          <label for="hf-zip">ZIP Code in PA</label>
+          <input type="text" id="hf-zip" name="zipCode" placeholder="e.g. 19101" required maxlength="10" inputmode="numeric" autocomplete="postal-code">
+          <span class="field-error" id="hf-zip-error">Please enter a valid PA zip code.</span>
+        </div>
+        <div class="form-row">
+          <div class="fg">
+            <label for="hf-name">Your Name</label>
+            <input type="text" id="hf-name" name="fullName" placeholder="Full name" required autocomplete="name">
+            <span class="field-error" id="hf-name-error">Please enter your name.</span>
+          </div>
+          <div class="fg">
+            <label for="hf-phone">Phone</label>
+            <input type="tel" id="hf-phone" name="phone" placeholder="(215) 555-1234" required autocomplete="tel" inputmode="tel">
+            <span class="field-error" id="hf-phone-error">Enter a valid phone number.</span>
+          </div>
+        </div>
+        <div class="fg">
+          <label for="hf-email">Email</label>
+          <input type="email" id="hf-email" name="email" placeholder="you@email.com" autocomplete="email">
+        </div>
+
+        <p id="hero-form-network-error" class="field-error" style="margin-bottom:4px;font-size:0.85rem;">Something went wrong. Please try again.</p>
+
+        <button type="submit" class="form-submit" id="heroSubmitBtn">Get My Free Matches &rarr;</button>
+
+        <p class="form-privacy">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#94a3b8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:inline;vertical-align:-1px;margin-right:3px;"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
+          We never share your information without your consent.
+        </p>
+      </form>
+
+      <div class="form-success" id="heroFormSuccess">
+        <div class="success-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+        </div>
+        <h3>We've Received Your Request!</h3>
+        <p>A care coordinator will reach out within 24 hours with personalized agency matches for your area.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="how-it-works" id="how-it-works">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-label">How It Works</div>
+      <h2 class="section-title">Three Simple Steps to the Right Care</h2>
+      <p class="section-desc">Getting matched is free and takes just a few minutes. No commitments, no pressure.</p>
+    </div>
+
+    <div class="steps-grid">
+      <div class="step-card">
+        <div class="step-num">1</div>
+        <h3>Tell Us About Your Needs</h3>
+        <p>Share the type of care needed, your location in PA, and your preferred schedule. The more we know, the better the match.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-num">2</div>
+        <h3>We Match You With Vetted Agencies</h3>
+        <p>Our team reviews your needs and connects you with PA-licensed, background-checked home health agencies in your area.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-num">3</div>
+        <h3>Choose Your Best Fit</h3>
+        <p>Review your matched agencies, ask questions, and choose the one that feels right. Free initial consultation included.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CARE TYPES / SERVICES -->
+<section class="care-types" id="care-types">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-label">Services &amp; Home Care Types</div>
+      <h2 class="section-title">Understanding Your Home Care Options</h2>
+      <p class="section-desc">Home care comes in many forms. Here's what's available in Pennsylvania and what to expect.</p>
+    </div>
+
+    <div class="care-grid">
+      <!-- Skilled Home Health -->
+      <div class="care-card">
+        <div class="care-card-header">
+          <div class="care-card-icon" style="background: #dbeafe;">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+          </div>
+          <h3>Home Health Care (Skilled)</h3>
+        </div>
+        <div class="care-card-body">
+          <ul>
+            <li>Skilled nursing: wound care, IV therapy, medication management</li>
+            <li>Physical therapy, occupational therapy, speech therapy</li>
+            <li>Medical social work</li>
+            <li>Typically covered by Medicare, Medicaid, or insurance</li>
+          </ul>
+          <div class="cost-badge">$150 &ndash; $250/visit (often $0 with Medicare)</div>
+        </div>
+      </div>
+
+      <!-- Personal Care -->
+      <div class="care-card">
+        <div class="care-card-header">
+          <div class="care-card-icon" style="background: #fce7f3;">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#db2777" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+          </div>
+          <h3>Personal Care / Home Care (Non-Medical)</h3>
+        </div>
+        <div class="care-card-body">
+          <ul>
+            <li>Bathing, dressing, and grooming assistance</li>
+            <li>Meal preparation and light housekeeping</li>
+            <li>Companionship and transportation</li>
+            <li>Medication reminders</li>
+          </ul>
+          <div class="cost-badge">$25 &ndash; $35/hr ($4,000 &ndash; $5,600/mo at 40hr/wk)</div>
+        </div>
+      </div>
+
+      <!-- Specialized Care -->
+      <div class="care-card">
+        <div class="care-card-header">
+          <div class="care-card-icon" style="background: #fef3c7;">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#d97706" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M12 8v4M12 16h.01"/></svg>
+          </div>
+          <h3>Specialized Care</h3>
+        </div>
+        <div class="care-card-body">
+          <ul>
+            <li>Alzheimer's and dementia care</li>
+            <li>Post-surgical recovery</li>
+            <li>Chronic disease management (COPD, CHF, diabetes)</li>
+            <li>Palliative and hospice care</li>
+            <li>Pediatric home health</li>
+          </ul>
+          <div class="cost-badge">$30 &ndash; $45/hr for specialized caregivers</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COST GUIDE -->
+<section class="cost-guide" id="cost-guide">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-label">Cost Guide</div>
+      <h2 class="section-title">Home Care Costs in Pennsylvania</h2>
+      <p class="section-desc">Understanding costs helps you plan. Here's what to expect across the Commonwealth.</p>
+    </div>
+
+    <div class="cost-table-wrap">
+      <table class="cost-table">
+        <thead>
+          <tr>
+            <th>Service Type</th>
+            <th>Hourly Rate</th>
+            <th>Monthly (40hr/wk)</th>
+            <th>Typical Coverage</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Home Health Aide</td>
+            <td>$28 &ndash; $33/hr</td>
+            <td>$4,500 &ndash; $5,300</td>
+            <td>Medicare / Medicaid (if qualifying)</td>
+          </tr>
+          <tr>
+            <td>Personal Care Aide</td>
+            <td>$25 &ndash; $30/hr</td>
+            <td>$4,000 &ndash; $4,800</td>
+            <td>Medicaid waiver, private pay</td>
+          </tr>
+          <tr>
+            <td>Skilled Nursing</td>
+            <td>$150 &ndash; $250/visit</td>
+            <td>Varies</td>
+            <td>Medicare, most insurance</td>
+          </tr>
+          <tr>
+            <td>Physical Therapy</td>
+            <td>$150 &ndash; $200/visit</td>
+            <td>Varies</td>
+            <td>Medicare, most insurance</td>
+          </tr>
+          <tr>
+            <td>Live-in Care</td>
+            <td>$250 &ndash; $350/day</td>
+            <td>$7,500 &ndash; $10,500</td>
+            <td>Mostly private pay</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="cost-note">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#d97706" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+      <div><strong>Note:</strong> Costs vary by region. The Philadelphia metro area tends to be 10&ndash;15% higher than statewide averages. Rural areas may have limited availability. We can help you understand costs specific to your area and insurance situation.</div>
+    </div>
+  </div>
+</section>
+
+<!-- TIPS -->
+<section class="tips" id="tips">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-label">Getting Started</div>
+      <h2 class="section-title">Tips for Patients &amp; Family Caregivers</h2>
+      <p class="section-desc">Whether you're exploring options for yourself or a loved one, these tips will help you navigate the process.</p>
+    </div>
+
+    <div class="tips-grid">
+      <div class="tips-col">
+        <h3>
+          <span class="tip-icon" style="background:#dbeafe;">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          </span>
+          For Patients
+        </h3>
+        <ol>
+          <li><strong>Talk to your doctor</strong> &mdash; get a home health referral if you need skilled care</li>
+          <li><strong>Understand your insurance</strong> &mdash; Medicare covers skilled home health if you're homebound</li>
+          <li><strong>Know your rights</strong> &mdash; you can choose any Medicare-certified agency</li>
+          <li><strong>Ask about caregiver qualifications</strong> and background checks</li>
+          <li><strong>Start with a needs assessment</strong> &mdash; most agencies offer free evaluations</li>
+        </ol>
+      </div>
+
+      <div class="tips-col">
+        <h3>
+          <span class="tip-icon" style="background:#fce7f3;">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#db2777" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+          </span>
+          For Family Caregivers
+        </h3>
+        <ol>
+          <li><strong>Don't wait until crisis</strong> &mdash; early planning gives you better options</li>
+          <li><strong>Create a care plan</strong> &mdash; list daily activities that need support</li>
+          <li><strong>Interview multiple agencies</strong> &mdash; ask about caregiver turnover, training, and emergency protocols</li>
+          <li><strong>Check state licensing</strong> &mdash; verify the agency is licensed by the PA Department of Health</li>
+          <li><strong>Look for signs of quality</strong> &mdash; ask about satisfaction surveys and complaint history</li>
+          <li><strong>Explore financial assistance</strong> &mdash; PA has Medicaid waiver programs (OBRA, Aging Waiver, COMMCARE)</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CHECKLIST -->
+<section class="checklist" id="checklist">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-label">Be Prepared</div>
+      <h2 class="section-title">Questions to Ask a Home Care Agency</h2>
+      <p class="section-desc">Print this checklist or keep it handy when interviewing agencies. Good agencies will welcome these questions.</p>
+    </div>
+
+    <div class="checklist-card">
+      <ul>
+        <li>Are you licensed by the PA Department of Health?</li>
+        <li>Are caregivers bonded, insured, and background-checked?</li>
+        <li>What is your caregiver-to-client ratio?</li>
+        <li>How do you handle emergencies or schedule changes?</li>
+        <li>Can I meet my caregiver before services begin?</li>
+        <li>What is your process for creating a care plan?</li>
+        <li>Do you accept my insurance or Medicaid waiver?</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- FULL LEAD FORM -->
+<section class="lead-section" id="lead-form">
+  <div class="container">
+    <div class="lead-section-inner">
+      <h2>Get Matched With the Right Agency</h2>
+      <p class="form-sub">Tell us about your needs and we'll connect you with trusted, licensed home health agencies in your area.</p>
+
+      <form class="lead-form" id="mainLeadForm" novalidate>
+
+        <div class="form-section-label">Who Needs Care?</div>
+        <div class="radio-group">
+          <label><input type="radio" name="whoNeedsCare" value="myself"><span>Myself</span></label>
+          <label><input type="radio" name="whoNeedsCare" value="parent"><span>My Parent</span></label>
+          <label><input type="radio" name="whoNeedsCare" value="spouse"><span>My Spouse</span></label>
+          <label><input type="radio" name="whoNeedsCare" value="other"><span>Other Family Member</span></label>
+        </div>
+
+        <div class="form-divider"></div>
+
+        <div class="form-section-label">What Type of Care? (select all that apply)</div>
+        <div class="checkbox-group">
+          <label><input type="checkbox" name="careTypes" value="skilled-nursing"><span>Skilled Nursing</span></label>
+          <label><input type="checkbox" name="careTypes" value="personal-care"><span>Personal Care</span></label>
+          <label><input type="checkbox" name="careTypes" value="therapy"><span>Therapy (PT/OT/Speech)</span></label>
+          <label><input type="checkbox" name="careTypes" value="companionship"><span>Companionship</span></label>
+          <label><input type="checkbox" name="careTypes" value="dementia"><span>Alzheimer's / Dementia</span></label>
+        </div>
+
+        <div class="form-divider"></div>
+
+        <div class="form-section-label">Location &amp; Timing</div>
+        <div class="form-row">
+          <div class="fg">
+            <label for="mf-zip">ZIP Code or City in PA *</label>
+            <input type="text" id="mf-zip" name="zipCode" placeholder="e.g. 19101 or Philadelphia" required autocomplete="postal-code">
+            <span class="field-error" id="mf-zip-error">Please enter your location.</span>
+          </div>
+          <div class="fg">
+            <label for="mf-when">When do you need care?</label>
+            <select id="mf-when" name="urgency">
+              <option value="" disabled selected>Select...</option>
+              <option value="asap">ASAP</option>
+              <option value="within-week">Within a week</option>
+              <option value="within-month">Within a month</option>
+              <option value="researching">Just researching</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-divider"></div>
+
+        <div class="form-section-label">Your Contact Information</div>
+        <div class="fg">
+          <label for="mf-name">Full Name *</label>
+          <input type="text" id="mf-name" name="fullName" placeholder="Your full name" required autocomplete="name">
+          <span class="field-error" id="mf-name-error">Please enter your name.</span>
+        </div>
+        <div class="form-row">
+          <div class="fg">
+            <label for="mf-phone">Phone *</label>
+            <input type="tel" id="mf-phone" name="phone" placeholder="(215) 555-1234" required autocomplete="tel" inputmode="tel">
+            <span class="field-error" id="mf-phone-error">Enter a valid phone number.</span>
+          </div>
+          <div class="fg">
+            <label for="mf-email">Email</label>
+            <input type="email" id="mf-email" name="email" placeholder="you@email.com" autocomplete="email">
+            <span class="field-error" id="mf-email-error">Enter a valid email.</span>
+          </div>
+        </div>
+
+        <p id="main-form-network-error" class="field-error" style="margin-bottom:4px;font-size:0.85rem;">Something went wrong. Please try again.</p>
+
+        <button type="submit" class="form-submit" id="mainSubmitBtn">Get My Free Matches &rarr;</button>
+
+        <p class="form-privacy">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#94a3b8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:inline;vertical-align:-1px;margin-right:3px;"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
+          We never share your information without your consent. View our <a href="/privacy">Privacy Policy</a>.
+        </p>
+      </form>
+
+      <div class="form-success" id="mainFormSuccess">
+        <div class="success-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+        </div>
+        <h3>Thank You! We've Received Your Request.</h3>
+        <p>A care coordinator will review your needs and reach out within 24 hours with personalized agency recommendations for your area.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PA RESOURCES -->
+<section class="resources" id="resources">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-label">Helpful Links</div>
+      <h2 class="section-title">Pennsylvania Home Care Resources</h2>
+      <p class="section-desc">Official resources to help you research and make informed decisions.</p>
+    </div>
+
+    <div class="resources-grid">
+      <a href="https://www.health.pa.gov" target="_blank" rel="noopener noreferrer" class="resource-card">
+        <div class="resource-icon" style="background: #dbeafe;">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <div>
+          <h4>PA Department of Health</h4>
+          <p>health.pa.gov &mdash; Licensing, regulations, provider lookups</p>
+        </div>
+      </a>
+      <a href="https://www.aging.pa.gov" target="_blank" rel="noopener noreferrer" class="resource-card">
+        <div class="resource-icon" style="background: #fce7f3;">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#db2777" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+        </div>
+        <div>
+          <h4>PA Department of Aging</h4>
+          <p>aging.pa.gov &mdash; Aging services, waiver programs, caregiver support</p>
+        </div>
+      </a>
+      <a href="https://www.medicare.gov/care-compare/" target="_blank" rel="noopener noreferrer" class="resource-card">
+        <div class="resource-icon" style="background: #dcfce7;">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+        </div>
+        <div>
+          <h4>Medicare Care Compare</h4>
+          <p>medicare.gov &mdash; Compare home health agencies, quality ratings</p>
+        </div>
+      </a>
+      <a href="https://www.aging.pa.gov/aging-services/Pages/AAA.aspx" target="_blank" rel="noopener noreferrer" class="resource-card">
+        <div class="resource-icon" style="background: #fef3c7;">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#d97706" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="10" r="3"/><path d="M12 21.7C17.3 17 20 13 20 10a8 8 0 10-16 0c0 3 2.7 7 8 11.7z"/></svg>
+        </div>
+        <div>
+          <h4>Area Agency on Aging Locator</h4>
+          <p>Find your local AAA for community-based services and support</p>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- BOTTOM CTA -->
+<section class="cta-section">
+  <div class="container">
+    <h2>Ready to Find the Right Care?</h2>
+    <p>Matching is free, takes just 2 minutes, and comes with zero obligation. Let us help you find trusted home care in Pennsylvania.</p>
+    <a href="#lead-form" class="btn-cta">
+      Get Matched Now
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    </a>
+    <div class="cta-sub">Free &bull; No Obligation &bull; Personalized Recommendations</div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div>
+        <div class="footer-brand-name">PA Care at Home</div>
+        <p class="footer-about">PA Care at Home is a free matching service that connects Pennsylvania patients and families with trusted, licensed home health agencies. We help you find the right care — so you can focus on what matters most.</p>
+        <p style="margin-top:12px;"><a href="mailto:info@pacareathome.org" style="color: rgba(255,255,255,0.6);">info@pacareathome.org</a></p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <a href="#how-it-works">How It Works</a>
+        <a href="#care-types">Services</a>
+        <a href="#cost-guide">Cost Guide</a>
+        <a href="#tips">Tips</a>
+        <a href="#lead-form">Get Matched</a>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <a href="/privacy">Privacy Policy</a>
+        <a href="/terms">Terms of Service</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2025 PA Care at Home. All rights reserved.</span>
+      <span>Serving all of Pennsylvania</span>
+    </div>
+    <div class="footer-disclosure">
+      PA Care at Home is a free matching service. We are compensated by partner agencies. This does not affect your cost or the quality of recommendations you receive.
+    </div>
+  </div>
+</footer>
+
+<!-- MOBILE STICKY CTA -->
+<div class="mobile-cta">
+  <a href="#lead-form">Get Matched Now &rarr;</a>
+</div>
+
+<!-- FORM LOGIC -->
+<script>
+(function() {
+  'use strict';
+
+  // TODO: Replace with real form endpoint (e.g. Formspree, custom API)
+  var FORM_ENDPOINT = 'https://formspree.io/f/PLACEHOLDER';
+
+  function showError(id) {
+    var el = document.getElementById(id);
+    if (el) el.classList.add('visible');
+    var inputId = id.replace('-error', '');
+    var input = document.getElementById(inputId);
+    if (input) input.classList.add('invalid');
+  }
+
+  function clearErrors(form) {
+    form.querySelectorAll('.field-error').forEach(function(e) { e.classList.remove('visible'); });
+    form.querySelectorAll('.invalid').forEach(function(e) { e.classList.remove('invalid'); });
+  }
+
+  function isValidPhone(val) {
+    return /^\(?[0-9]{3}\)?[-.\s]?[0-9]{3}[-.\s]?[0-9]{4}$/.test(val.replace(/\s/g, ''));
+  }
+
+  function isValidEmail(val) {
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(val);
+  }
+
+  function submitForm(formData, submitBtn, networkErrId, successId, formEl) {
+    submitBtn.disabled = true;
+    submitBtn.textContent = 'Submitting...';
+
+    fetch(FORM_ENDPOINT, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(formData)
+    })
+    .then(function(r) {
+      if (!r.ok) throw new Error('Network error');
+      formEl.style.display = 'none';
+      document.getElementById(successId).classList.add('visible');
+    })
+    .catch(function() {
+      document.getElementById(networkErrId).classList.add('visible');
+      submitBtn.disabled = false;
+      submitBtn.textContent = 'Get My Free Matches \u2192';
+    });
+  }
+
+  // Hero form
+  var heroForm = document.getElementById('heroLeadForm');
+  var heroBtn = document.getElementById('heroSubmitBtn');
+
+  heroForm.addEventListener('submit', function(e) {
+    e.preventDefault();
+    clearErrors(heroForm);
+    var valid = true;
+
+    var name = document.getElementById('hf-name');
+    var phone = document.getElementById('hf-phone');
+    var zip = document.getElementById('hf-zip');
+    var email = document.getElementById('hf-email');
+
+    if (!name.value.trim()) { showError('hf-name-error'); valid = false; }
+    if (!isValidPhone(phone.value)) { showError('hf-phone-error'); valid = false; }
+    if (!zip.value.trim() || zip.value.trim().length < 3) { showError('hf-zip-error'); valid = false; }
+    if (email.value && !isValidEmail(email.value)) { /* skip */ }
+
+    if (!valid) return;
+
+    var data = {
+      whoNeedsCare: document.getElementById('hf-who').value,
+      careType: document.getElementById('hf-care').value,
+      zipCode: zip.value.trim(),
+      fullName: name.value.trim(),
+      phone: phone.value.trim(),
+      email: email.value.trim(),
+      source: 'pacareathome.org',
+      formLocation: 'hero',
+      timestamp: new Date().toISOString()
+    };
+
+    submitForm(data, heroBtn, 'hero-form-network-error', 'heroFormSuccess', heroForm);
+  });
+
+  // Main form
+  var mainForm = document.getElementById('mainLeadForm');
+  var mainBtn = document.getElementById('mainSubmitBtn');
+
+  mainForm.addEventListener('submit', function(e) {
+    e.preventDefault();
+    clearErrors(mainForm);
+    var valid = true;
+
+    var name = document.getElementById('mf-name');
+    var phone = document.getElementById('mf-phone');
+    var zip = document.getElementById('mf-zip');
+    var email = document.getElementById('mf-email');
+
+    if (!name.value.trim()) { showError('mf-name-error'); valid = false; }
+    if (!isValidPhone(phone.value)) { showError('mf-phone-error'); valid = false; }
+    if (!zip.value.trim() || zip.value.trim().length < 3) { showError('mf-zip-error'); valid = false; }
+    if (email.value && !isValidEmail(email.value)) { showError('mf-email-error'); valid = false; }
+
+    if (!valid) return;
+
+    // Collect radio
+    var whoRadio = mainForm.querySelector('input[name="whoNeedsCare"]:checked');
+    var whoVal = whoRadio ? whoRadio.value : '';
+
+    // Collect checkboxes
+    var careChecks = [];
+    mainForm.querySelectorAll('input[name="careTypes"]:checked').forEach(function(cb) {
+      careChecks.push(cb.value);
+    });
+
+    var data = {
+      whoNeedsCare: whoVal,
+      careTypes: careChecks.join(', '),
+      zipCode: zip.value.trim(),
+      urgency: document.getElementById('mf-when').value || '',
+      fullName: name.value.trim(),
+      phone: phone.value.trim(),
+      email: email.value.trim(),
+      source: 'pacareathome.org',
+      formLocation: 'main',
+      timestamp: new Date().toISOString()
+    };
+
+    submitForm(data, mainBtn, 'main-form-network-error', 'mainFormSuccess', mainForm);
+  });
+
+})();
+</script>
+
+</body>
+</html>
